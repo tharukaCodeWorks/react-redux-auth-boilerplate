@@ -1,0 +1,88 @@
+.auth {
+    display: flex;
+    height: 100%;
+    /* flex-wrap: wrap; */
+}
+
+.auth-left {
+    flex: 70%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;
+}
+
+.auth-right {
+    flex: 30%;
+    background-color: #242125;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.auth-left>img{
+    flex: 1;
+    width: 600px;
+}
+
+.credit{
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
+    color: rgb(119, 119, 119);
+    font-size: small;
+}
+
+.slug{
+    /* margin-top: 40px; */
+    align-self: flex-start;
+    color: #2B6CB8;
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+}
+
+.teachmeit-link:hover{
+    color: #21ba45;
+}
+
+.teachmeit-link{
+    color: inherit;
+}
+
+@media screen and (max-width: 992px) {
+    .auth {
+        flex: 50%;
+    }
+}
+  
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .auth {
+        flex-direction: column;
+    }
+
+    .auth-left>img{
+        width: 200px;
+    }
+
+    .slug{
+        /* margin-top: 40px; */
+        align-self: flex-start;
+        color: #2B6CB8;
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .credit{
+        display: none;
+    }
+
+    .auth-right {
+        flex: 30%;
+        background-color: #2B6CB8;
+        height: 100%;
+        padding: 20px 40px;
+    }
+}

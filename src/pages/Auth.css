@@ -1,0 +1,65 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap'); */
+
+input[type=text], input[type=email], input[type=password], input[type=number], input[type=date], select, textarea {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 4px;
+    flex-grow: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+input:disabled {
+    background: #ccc;
+  }
+
+input[type=submit] {
+    background-color: #2BB86C;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    outline:none;
+    color: #fff;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #229759;
+    cursor: pointer;
+}
+
+input[type=submit]:disabled {
+    background-color: #5f9c7b;
+    cursor:default;
+}
+
+.input-label{
+    font-size: small;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.link-style{
+    text-decoration: none;
+    font-size: medium;
+    color: #fff !important;
+}
+
+.input-error {
+    border: 1px solid #fd8369 !important;
+    color: #000000 !important;
+}
+
+::placeholder{
+    color: #ccc;
+    opacity: 0.5;
+}
+
+.error-message{
+    color: #fd8369;
+    font-size: small;
+}
+

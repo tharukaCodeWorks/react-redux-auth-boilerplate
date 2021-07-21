@@ -1,0 +1,16 @@
+html, body{
+  height:100%
+}
+
+#root{
+  height:100%
+}
+
+a{
+  color: inherit !important;
+}
+
+a:hover{
+  color: #2B6CB8;
+}
+
