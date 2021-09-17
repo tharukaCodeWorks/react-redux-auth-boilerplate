@@ -1,5 +1,5 @@
-const HOST = "http://localhost:8080";
-
+// const HOST = "http://localhost:8080";
+const HOST = "https://avian-spring.herokuapp.com"
 export default HOST;
 export const LOGIN = `${HOST}/auth/sign-in`;
 export const REGISTER = `${HOST}/auth/signup`;

@@ -15,6 +15,8 @@ import NotFound from './pages/NotFound';
 import ResetPassword from './pages/ResetPassword';
 import Landing from './pages/Landing';
 import Home from './pages/Home';
+import Item from './pages/Items';
+import ItemTypes from './pages/ItemTypes';
 
 function App() {
   return (
@@ -37,6 +39,12 @@ function App() {
             </AnonymousAuth>
             <PrivateRoute path="/home" >
               <Home />
+            </PrivateRoute>
+            <PrivateRoute path="/dashboard/items" >
+              <Item />
+            </PrivateRoute>
+            <PrivateRoute path="/dashboard/item-types" >
+              <ItemTypes />
             </PrivateRoute>
             <Route to="/">
               <Landing />
