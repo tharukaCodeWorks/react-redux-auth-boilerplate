@@ -37,7 +37,9 @@ function App() {
             <AnonymousAuth path="/auth/email-verify">
               <EmailVerify />
             </AnonymousAuth>
-            <PrivateRoute path="/home" >
+
+            {/* Production mode--------------------------------------- */}
+            {/* <PrivateRoute path="/home" >
               <Home />
             </PrivateRoute>
             <PrivateRoute path="/dashboard/items" >
@@ -45,7 +47,25 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/dashboard/item-types" >
               <ItemTypes />
-            </PrivateRoute>
+            </PrivateRoute> */}
+            {/* Production mode--------------------------------------- */}
+
+
+
+            
+            {/* Dev mode--------------------------------------- */}
+            <AnonymousAuth path="/home" >
+              <Home />
+            </AnonymousAuth>
+            <AnonymousAuth path="/dashboard/items" >
+              <Item />
+            </AnonymousAuth>
+            <AnonymousAuth path="/dashboard/item-types" >
+              <ItemTypes />
+            </AnonymousAuth>
+            {/* Dev mode--------------------------------------- */}
+
+
             <Route to="/">
               <Landing />
             </Route>
