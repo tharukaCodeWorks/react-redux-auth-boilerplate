@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center; 
     padding: 10px;
+
 }
 
 .auth-right {
@@ -31,6 +32,7 @@
     text-align: center;
     color: rgb(119, 119, 119);
     font-size: small;
+    /* position: absolute; */
 }
 
 .slug{
