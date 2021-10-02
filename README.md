@@ -18,12 +18,6 @@ function App() {
             <AnonymousAuth path="/auth/login">
               <Login />
             </AnonymousAuth>
-            <AnonymousAuth path="/auth/register">
-              <Register />
-            </AnonymousAuth>
-            <AnonymousAuth path="/auth/forgot-password">
-              <ForgotPassword />
-            </AnonymousAuth>
         <Switch>
     </Router>
   )
@@ -41,12 +35,6 @@ function App() {
         <Switch>
             <PrivateRoute path="/home" >
               <Home />
-            </PrivateRoute>
-            <PrivateRoute path="/dashboard/items" >
-              <Item />
-            </PrivateRoute>
-            <PrivateRoute path="/dashboard/item-types" >
-              <ItemTypes />
             </PrivateRoute>
         </Switch>
       </Router>
