@@ -17,6 +17,7 @@ import Landing from './pages/Landing';
 import Home from './pages/Home';
 import Item from './pages/Items';
 import ItemTypes from './pages/ItemTypes';
+import Orders from './pages/Orders';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             </AnonymousAuth>
 
             {/* Production mode--------------------------------------- */}
+
             {/* <PrivateRoute path="/home" >
               <Home />
             </PrivateRoute>
@@ -47,7 +49,13 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/dashboard/item-types" >
               <ItemTypes />
-            </PrivateRoute> */}
+            </PrivateRoute> *
+            <PrivateRoute path="/dashboard/orders" >
+              <Orders />
+            </PrivateRoute>
+
+            */}
+
             {/* Production mode--------------------------------------- */}
 
 
@@ -62,6 +70,9 @@ function App() {
             </AnonymousAuth>
             <AnonymousAuth path="/dashboard/item-types" >
               <ItemTypes />
+            </AnonymousAuth>
+            <AnonymousAuth path="/dashboard/orders" >
+              <Orders />
             </AnonymousAuth>
             {/* Dev mode--------------------------------------- */}
 
