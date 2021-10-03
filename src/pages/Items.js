@@ -11,8 +11,8 @@ import Box from '@mui/material/Box';
 import { Breadcrumbs, Link, Typography } from '@material-ui/core';
 import TextField from '@mui/material/TextField';
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(id, itemnames, itemimage, sellingprice, protein) {
+  return { id, itemnames, itemimage, sellingprice, protein };
 }
 
 const rows = [
@@ -97,11 +97,11 @@ const Item=(props)=>{
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.name}
+                {row.id}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
+              <TableCell align="right">{row.itemnames}</TableCell>
+              <TableCell align="right">{row.itemimage}</TableCell>
+              <TableCell align="right">{row.sellingprice}</TableCell>
               <TableCell align="right">
                   <button>Edit</button>
                   <button>Delete</button>

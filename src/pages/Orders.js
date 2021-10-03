@@ -11,8 +11,8 @@ import Box from '@mui/material/Box';
 import { Breadcrumbs, Link, Typography } from '@material-ui/core';
 import TextField from '@mui/material/TextField';
 
-function createData(name, itemtypename, itemtypeimage, itemcount) {
-  return { name, itemtypename, itemtypeimage, itemcount };
+function createData(id, itemtypename, itemtypeimage, itemcount) {
+  return { id, itemtypename, itemtypeimage, itemcount };
 }
 
 const rows = [
@@ -54,7 +54,7 @@ const Orders=(props)=>{
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
                         <TableCell component="th" scope="row">
-                            {row.name}
+                            {row.id}
                         </TableCell>
                         <TableCell align="right">{row.itemtypename}</TableCell>
                         <TableCell align="right">{row.itemtypeimage}</TableCell>

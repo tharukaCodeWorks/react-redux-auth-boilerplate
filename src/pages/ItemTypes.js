@@ -11,16 +11,16 @@ import Box from '@mui/material/Box';
 import { Breadcrumbs, Link, Typography } from '@material-ui/core';
 import TextField from '@mui/material/TextField';
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories };
+function createData(id, itemname, itemimage) {
+  return { id, itemname,itemimage };
 }
 
 const rows = [
-  createData('1', 'Sample 1'),
-  createData('2', 'Sample 2'),
-  createData('3', 'Sample 3'),
-  createData('4', 'Sample 4'),
-  createData('5', 'Sample 5'),
+  createData('1', 'Sample 1', 'N/A'),
+  createData('2', 'Sample 2', 'N/A'),
+  createData('3', 'Sample 3', 'N/A'),
+  createData('4', 'Sample 4', 'N/A'),
+  createData('5', 'Sample 5', 'N/A'),
 ];
 
 const ItemTypes=(props)=>{
@@ -77,10 +77,10 @@ const ItemTypes=(props)=>{
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.name}
+                {row.id}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">N/A</TableCell>
+              <TableCell align="right">{row.itemname}</TableCell>
+              <TableCell align="right">{row.itemimage}</TableCell>
               <TableCell align="right">
                   <button>Edit</button>
                   <button>Delete</button>
