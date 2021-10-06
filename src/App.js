@@ -41,7 +41,7 @@ function App() {
 
             {/* Production mode--------------------------------------- */}
 
-            {/* <PrivateRoute path="/home" >
+            <PrivateRoute path="/home" >
               <Home />
             </PrivateRoute>
             <PrivateRoute path="/dashboard/items" >
@@ -54,7 +54,7 @@ function App() {
               <Orders />
             </PrivateRoute>
 
-            */}
+           
 
             {/* Production mode--------------------------------------- */}
 
@@ -62,7 +62,7 @@ function App() {
 
             
             {/* Dev mode--------------------------------------- */}
-            <AnonymousAuth path="/home" >
+            {/* <AnonymousAuth path="/home" >
               <Home />
             </AnonymousAuth>
             <AnonymousAuth path="/dashboard/items" >
@@ -73,7 +73,7 @@ function App() {
             </AnonymousAuth>
             <AnonymousAuth path="/dashboard/orders" >
               <Orders />
-            </AnonymousAuth>
+            </AnonymousAuth> */}
             {/* Dev mode--------------------------------------- */}
 
 
