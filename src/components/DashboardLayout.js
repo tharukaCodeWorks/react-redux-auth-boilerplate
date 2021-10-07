@@ -156,7 +156,7 @@ const DashboardLayout=(props)=>{
               <ListItemText primary="Items" />
             </ListItem>
 
-            <ListItem button>
+            <ListItem button onClick={()=>handleOnNavClick('/dashboard/orders')}>
               <ListItemIcon><ListIcon></ListIcon></ListItemIcon>
               <ListItemText primary="Orders" />
             </ListItem>

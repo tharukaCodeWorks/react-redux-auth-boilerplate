@@ -8,8 +8,8 @@ const AuthLayout = (props) =>{
 
             <div className="auth-left">
                 <p className="slug">Avian<br /> Admin Panel</p>
-                <img src={authSvg}/>
-                <p className="credit">all rights reserved &#169; <a href="#" target="blank" className="teachmeit-link">Avian</a> 2021 | <a href="#" target="blank">privacy policy</a> | <a href="#" target="blank">Terms & Conditions</a></p>
+                <img src={authSvg} style={{width:"55%"}}/>
+                <p className="credit">All Rights Reserved &#169; <a href="#" target="blank" className="teachmeit-link">Avian</a> 2021 | <a href="#" target="blank">Privacy Policy</a> | <a href="#" target="blank">Terms & Conditions</a></p>
             </div>
 
             <div className="auth-right">
